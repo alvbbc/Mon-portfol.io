@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucle Do-while</title>
+</head>
+<body>
+    <div style="border: 2px solid green;">
+        <h3>Le Nombre Secret</h3>
+        <script>
+      let nombreSecret = Math.floor(Math.random() * 100) + 1;
+let proposition;
+do {
+    proposition = Number(prompt("Devinez le nombre secret entre 1 et 100!"));
+i=proposition
+a=nombreSecret
+if (i > a){alert("Le nombre secret est plus petit")}
+else if (i<a){alert("Le nombre secret est plus grand");
+} 
+else {alert("Bravo, votre supposition est correcte")}
+} while (i !== a) ;
+</script>
+    </div>
+</body>
+</html>

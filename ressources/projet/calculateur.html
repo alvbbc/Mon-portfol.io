@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul hypothécaire</title>
+</head>
+<body>
+  <label for="montant">Saisissez le montant du prêt :</label> 
+  <input type="text" id="montant" placeholder="ex : 100000"><br><br> 
+
+  <label for="interet">Saisissez le taux d'intérêt annuel (%):</label> 
+  <input type="text" id="interet" placeholder="ex : 5"><br><br> 
+
+  <label for="duree">Saisissez la durée en années :</label> 
+  <input type="text" id="duree" placeholder="ex : 20"><br><br>
+  
+  <button type="button" onclick="paiementMensuel()">Calculer</button>
+  <div style="border: 2px solid yellowgreen; margin-top: 20px; padding: 10px;"> 
+    <p>Le paiement mensuel du prêt hypothécaire est : <span id="mensuel"></span></p> 
+</div>
+       <script>
+        function paiementMensuel() {
+            const montantPret = parseFloat(document.getElementById("montant").value); 
+            const tauxAnnuel = parseFloat(document.getElementById("interet").value);
+             const nombreAnnee = parseFloat(document.getElementById("duree").value);
+             let P = montantPret
+
+if (isNaN(P) && P < 0 ) { alert("Erreur dans le montant"); return; } 
+if (isNaN(tauxAnnuel)) { alert("Erreur dans le taux d'intérêt"); return; }
+ if (isNaN(nombreAnnee)) { alert("Erreur dans la durée"); return; }
+
+ const r = (tauxAnnuel / 100) / 12;
+ const n = nombreAnnee * 12; 
+ const d = Math.pow(1 + r, n); 
+ const M = P * r * d / (d - 1);
+
+ document.getElementById("mensuel").textContent = M.toFixed(3) ;
+        }
+    </script>
+</div>
+</body>
+</html>

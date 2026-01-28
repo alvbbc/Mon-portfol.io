@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="./ressources/index.css">
+</head>
+<body>
+    <header>
+        <div id="nom">Vöwens Barbancourt ALCE</div>
+        <div id="button">
+            <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+            </nav>
+            <main>
+                <section id="accueil">
+                    <h1>Bienvenue sur mon site web</h1> 
+                    <p>Je suis <span>Vöwens</span>, analyste en développement et passionné de web.</p>
+                    <div class="button">
+                        <p id="lien"><a href="#projets" title="Voyons ensemble!">Voir mes projets</a></p>
+                    </div>
+                    <div class="Images">
+                        <img src="./ressources/images/Image 25 janv. 2026, 12_42_27.jpg" alt="Web Devlopment" title="Mon bureau de travail">
+                    </div>
+                </section>
+
+                    <section id="apropos">
+                        <h2>A propos</h2>
+                       <div class="corps">
+                        <p>
+                            je m'appelle <Span class="italic">Vöwens Barbancourt ALCE</Span>, passionné principalement par la technologie, la création de sites web modernes et d'applications interactives.
+                           <br> <br>Professionnel du développement, 
+                            je m’intéresse particulièrement aux mécanismes de gestion des projets financés par des bailleurs internationaux, notamment en situation de crise.
+                             Mon parcours combine des expériences en analyse de projets, passation de marchés, gestion opérationnelle et sécurité alimentaire.
+<br> <br>
+Guidé par des valeurs de rigueur, de transparence et d’impact,
+ je m’efforce de contribuer à des interventions plus efficaces et adaptées aux réalités locales.
+ J’accorde une importance particulière à l’analyse des données, à la compréhension des contextes institutionnels et à la qualité des processus opérationnels.
+ <br> <br>Spécialités clés : <span id="key">projets en contexte d’urgence · passation de marchés · sécurité alimentaire · analyse de données secondaires</span>
+                        </p> <br>
+                        <div class="Images">
+                        <img src="./ressources/images/IMG_20251011_112123510.jpg" alt="vowens" title="Mon Profil">
+                        <br>
+                    </div>
+                    <h2>Mes compétences</h2>
+                    <div class="corps">
+                       
+                        <h3>💻 Développement web</h3>
+<ul>
+    <li>HTML5 – structuration sémantique des pages</li>
+<li>CSS3 – mise en page, responsive design</li>
+<li>JavaScript – interactivité, logique front-end</li>
+<li>Intégration de maquettes (UI → Web)</li>
+<li>Conception de sites vitrines et portfolios</li>
+<li>Bases en développement back-end</li>
+</ul>
+
+<h3>🛠️ Outils & environnements</h3>
+
+<ul>
+    <li>Visual Studio Code</li>
+<li>Git / GitHub (versioning, dépôts)</li>
+<li>Microsoft Excel (analyse, tableaux, suivi)</li>
+<li>Copilot / outils d’IA pour l’aide au développement</li>
+<li>Navigateurs & outils de debug (DevTools)</li>
+</ul>
+                    </div>
+                    <div class="button">
+                       
+                    <a href="./ressources/documents/CV_2026-01-12_SAME.pdf" download class="btn-cv" title="Appuyez pour Télécharger" target="_blank">📄 Télécharger mon CV</a>
+                        </div>
+
+                    </section>
+
+                <section id="projets">
+                    <h2>Mes projets</h2>
+                    <div class="cases">
+                        <p>
+                            Un projet en cours d'élaboration permettant de générer des portfolios en ligne en un clic.
+                        </p>
+                        <div class="button">
+                            <a href="./ressources/projet/Projet.html" target="_blank">Voir</a> 
+                         </div>
+                    
+                        </div>
+                    <div class="cases">
+                        <p>Un programme permettant de calculer le paiement mensuel d'un emprunt hypothécaire.</p>
+                        <div class="button">
+                            <a href="./ressources/projet/calculateur.html" target="_blank">Voir</a>
+                        </div>
+                    </div>
+
+                    <div class="cases">
+                        <p>Un jeu de devinette pour deviner un nombre secret entre 1 et 100!</p>
+                        <div class="button">
+                            <a href="./ressources/projet/Do-while.html" target="_blank">Voir</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="formulaire">
+                    <p class="center">Vous avez un <span>projet en t&te ?</span> </p>
+                    <p class="center">N'hesitez pas à <span> nous contacter!</span></p>
+
+                    <form id="monFormulaire">
+
+                        <label for="nom">Nom :</label> 
+                        <input type="text" id="nom" name="nom" required><br><br> 
+
+                         <label for="prenom">Prénom :</label> 
+                         <input type="text" id="prenom" name="prenom" required><br><br>
+
+                          <label for="email">Email :</label> 
+                          <input type="email" id="email" name="email" required><br><br>
+
+                          <label for="objet">Objet :</label>
+                           <input type="text" id="objet" name="objet" maxlength="100" required><br><br>
+                           
+                          <label for="description">Description :</label><br> 
+                          <textarea id="description" name="description" rows="15" cols="25"></textarea><br><br> 
+                          
+                          <button type="submit">Envoyer</button> 
+                        </form> 
+                          
+                          <script>  
+                          const form = document.getElementById("monFormulaire"); 
+
+                           form.addEventListener("submit", function(event) { event.preventDefault(); 
+                             
+                             const prenom = document.getElementById("prenom").value; 
+
+                             alert("Merci " + prenom + ", nous vous contacterons !");
+                             });
+                              </script>
+                </section>
+                    
+            </main>
+            <footer id="contact">
+                <p>📧 Contactez-moi : <a href="mailto:alvbbc@gmail.com" title="Mon E-mail">Vöwens Barbancourt ALCE</a></p>
+                 <p>🔗 <a href="https://www.linkedin.com/in/ing-agr-vöwens-barbancourt-alcé">Linked in Me</a></p>
+            </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+
+header {
+  background-color: navy;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+header #nom {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: square;;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: darkorange;
+}
+
+
+.Images img {
+  display: block;
+  margin: 10px auto 10px 0;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+
+span {
+  color: darkorange;
+  font-weight: bold;
+}
+
+
+.italic {
+  font-style: italic;
+}
+
+
+.button a, .btn-cv, button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: navy;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button a:hover, .btn-cv:hover, button:hover {
+  background-color: darkorange;
+}
+
+
+.center {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+#formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#formulaire label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+#formulaire input, 
+#formulaire textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+#projets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.cases {
+  flex: 1 1 30%;
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid navy;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.corps {
+    border: black;
+  text-align: justify;
+  margin: 20px;
+}
+
+
+footer { background-color: #222;
+     color: white; 
+     text-align: center; 
+     padding: 20px; margin-top: 30px; }
+     
+footer a { color: lightblue; 
+         font-weight: bold; }
+footer a:hover { color: darkorange; }
+
+
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+h2 {
+  text-align: center;
+  color: navy;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: navy;
+  color: white;
+  border: 2px green solid;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: darkorange;
+}
